@@ -5,6 +5,8 @@ import GithubProvider from "next-auth/providers/github"
 
 import { fauna } from "../../../services/fauna";
 
+
+
 export default NextAuth({
   // Configure one or more authentication providers
   providers: [
@@ -13,7 +15,7 @@ export default NextAuth({
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
       authorization: {
         params: {
-          scope: 'read:user',
+          scope: 'read:user, user:email'
         },
       },
     }),
@@ -21,7 +23,7 @@ export default NextAuth({
   ],
 
   callbacks: {
-    async signIn(user, account, profile) {
+    async signIn({user, account, profile}) {
       const { email } = user
 
       await fauna.query(
