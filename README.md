@@ -48,6 +48,3 @@ FAUNADB_KEY
 
 PRISMIC_ACCESS_TOKEN
 
-<div align="center">
-  <img src="/images/ignews.jpeg" alt="ignews" width="0px" />
-</div>
