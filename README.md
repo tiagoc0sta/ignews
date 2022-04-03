@@ -1,3 +1,4 @@
+![ignews](https://user-images.githubusercontent.com/63982700/161445902-d43d28fd-da90-46ec-b7b8-7fcc65ba01c5.jpeg)
 
 # Ignews
 
@@ -47,4 +48,6 @@ GITHUB_CLIENT_SECRET
 FAUNADB_KEY
 
 PRISMIC_ACCESS_TOKEN
+
+
 
